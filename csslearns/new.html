@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        position: relative;
+      }
+      .box::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.1);
+      }
+      .animated-link {
+        position: relative; /* Required for ::after positioning */
+        text-decoration: none; /* Remove default underline */
+        color: #333;
+        font-size: 20px;
+        font-weight: 500;
+        padding-bottom: 3px; /* Optional spacing for underline */
+      }
+      .animated-link::after {
+        content: ""; /* Must have content */
+        position: absolute; /* Position relative to link */
+        left: 0;
+        bottom: 0; /* At the bottom of text */
+        width: 0; /* Start with zero width */
+        height: 1.2px; /* Thickness of underline */
+        background-color: #ff4500; /* Underline color */
+        transition: width 0.3s ease; /* Animate width */
+      }
+      .animated-link:hover::after {
+        width: 100%; /* Full width of the link */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure neque animi
+      consequuntur quibusdam? Quae molestias fuga maiores perspiciatis quo
+      laboriosam reprehenderit magnam illum aut! Eaque recusandae autem esse
+      optio minus!
+    </div>
+    <a href="#" class="animated-link">Hover Me</a>
+  </body>
+</html>
