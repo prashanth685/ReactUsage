@@ -1,5 +1,6 @@
 import React, { Suspense } from "react";
 import Pagination from "./Components/Pagination";
+import Users from "./Components/Users";
 // import Lazy from "./Components/Lazy";
 // const Lazy = React.lazy(() => import("./Components/Lazy"));
 
@@ -10,8 +11,9 @@ const App = () => {
       <Suspense>
         <Lazy />
       </Suspense> */}
-      <h1>Leaning Pagination</h1>
-      <Pagination />
+      {/* <h1>Leaning Pagination</h1> */}
+      {/* <Pagination /> */}
+      <Users />
     </>
   );
 };
