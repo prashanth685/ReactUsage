@@ -1,0 +1,32 @@
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px;
+  text-align: left;
+}
+.table th,
+table td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+}
+.table th {
+  background-color: #f2f2f2;
+}
+.pagination {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.page-item {
+  padding: 6px 12px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.active {
+  background-color: #007bff;
+  color: white;
+}
