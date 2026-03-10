@@ -10,9 +10,12 @@ const Query = () => {
   return (
     <div>
       <h1>Posts</h1>
-      {data.slice(0, 5).map((post) => (
+      {data.map((post) => (
         <div key={post.id}>
-          <h3>{post.title}</h3>
+          <h3>
+            {post.id}
+            {"]"} {"\n"} {post.title}
+          </h3>
         </div>
       ))}
     </div>
