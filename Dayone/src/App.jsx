@@ -6,6 +6,7 @@ import Query from "./Components/Query";
 import Like from "./Components/Like";
 import Todo from "./Components/Todo";
 import Sidebar from "./Components/Sidebar";
+import Table from "./Components/Table";
 // import Lazy from "./Components/Lazy";
 // const Lazy = React.lazy(() => import("./Components/Lazy"));
 
@@ -23,7 +24,8 @@ const App = () => {
       {/* <Query /> */}
       {/* <Like /> */}
       {/* <Todo /> */}
-      <Sidebar />
+      {/* <Sidebar /> */}
+      <Table />
     </>
   );
 };

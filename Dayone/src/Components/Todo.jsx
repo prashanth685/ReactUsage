@@ -3,7 +3,8 @@ import React, { useState } from "react";
 const Todo = () => {
   const [task, setTask] = useState([]);
   const [input, setinput] = useState("");
-  const addTask = () => {
+
+  const Addtask = () => {
     if (input === "") return;
     setTask([...task, input]);
     setinput("");
@@ -12,10 +13,10 @@ const Todo = () => {
     <div>
       <input
         type="text"
-        placeholder="enter your task"
+        placeholder="enter a task"
         onChange={(e) => setinput(e.target.value)}
       />
-      <button onClick={addTask}>Add Task</button>
+      <button onClick={Addtask}>Add Task</button>
       <ul>
         {task.map((todo, index) => (
           <li key={index}>{todo}</li>
