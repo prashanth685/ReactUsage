@@ -7,6 +7,9 @@ import Like from "./Components/Like";
 import Todo from "./Components/Todo";
 import Sidebar from "./Components/Sidebar";
 import Table from "./Components/Table";
+import Styled from "./Components/Styled";
+import SearchBar from "./Components/SearchBar";
+import Form from "./Components/Form";
 // import Lazy from "./Components/Lazy";
 // const Lazy = React.lazy(() => import("./Components/Lazy"));
 
@@ -25,7 +28,10 @@ const App = () => {
       {/* <Like /> */}
       {/* <Todo /> */}
       {/* <Sidebar /> */}
-      <Table />
+      {/* <Table /> */}
+      {/* <Styled /> */}
+      {/* <SearchBar /> */}
+      <Form />
     </>
   );
 };
