@@ -10,6 +10,7 @@ import Table from "./Components/Table";
 import Styled from "./Components/Styled";
 import SearchBar from "./Components/SearchBar";
 import Form from "./Components/Form";
+import InputPlace from "./Components/InputPlace";
 // import Lazy from "./Components/Lazy";
 // const Lazy = React.lazy(() => import("./Components/Lazy"));
 
@@ -31,7 +32,8 @@ const App = () => {
       {/* <Table /> */}
       {/* <Styled /> */}
       {/* <SearchBar /> */}
-      <Form />
+      {/* <Form /> */}
+      <InputPlace />
     </>
   );
 };
