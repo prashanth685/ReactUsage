@@ -30,12 +30,12 @@ const App = () => {
       {/* <Like /> */}
       {/* <Todo /> */}
       {/* <Sidebar /> */}
-      <Table />
+      {/* <Table /> */}
       {/* <Styled /> */}
       {/* <SearchBar /> */}
       {/* <Form /> */}
       {/* <InputPlace /> */}
-      {/* <Image /> */}
+      <Image />
     </>
   );
 };

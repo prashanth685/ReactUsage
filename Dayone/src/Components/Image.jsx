@@ -8,7 +8,7 @@ const Image = () => {
         alt=""
         className="w-22 h-32 m-20 -translate-z-2 rotate-x-50 rotate-z-45 "
       />
-      <table className="auto border-solid">
+      <table className="auto ">
         <thead>
           <tr>
             <th>slno</th>
