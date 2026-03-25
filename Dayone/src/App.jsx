@@ -12,6 +12,8 @@ import SearchBar from "./Components/SearchBar";
 import Form from "./Components/Form";
 import InputPlace from "./Components/InputPlace";
 import Image from "./Components/Image";
+import Drag from "./Components/Drag";
+import Tailwind from "./Components/Tailwind";
 // import Lazy from "./Components/Lazy";
 // const Lazy = React.lazy(() => import("./Components/Lazy"));
 
@@ -35,7 +37,9 @@ const App = () => {
       {/* <SearchBar /> */}
       {/* <Form /> */}
       {/* <InputPlace /> */}
-      <Image />
+      {/* <Image /> */}
+      {/* <Drag /> */}
+      <Tailwind />
     </>
   );
 };
