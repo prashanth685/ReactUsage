@@ -1,0 +1,16 @@
+{
+  "jobs": [
+    {
+      "id": 1,
+      "title": "Sr Software developer",
+      "salary": 30000,
+      "location": "Bengaluru"
+    },
+    {
+      "id": 2,
+      "title": "Sr  React Software developer",
+      "salary": 34000,
+      "location": "Bengaluru"
+    }
+  ]
+}
