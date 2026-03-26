@@ -14,6 +14,7 @@ import InputPlace from "./Components/InputPlace";
 import Image from "./Components/Image";
 import Drag from "./Components/Drag";
 import Tailwind from "./Components/Tailwind";
+import { MainHome } from "./Components/MainHome";
 // import Lazy from "./Components/Lazy";
 // const Lazy = React.lazy(() => import("./Components/Lazy"));
 
@@ -39,7 +40,8 @@ const App = () => {
       {/* <InputPlace /> */}
       {/* <Image /> */}
       {/* <Drag /> */}
-      <Tailwind />
+      {/* <Tailwind /> */}
+      <MainHome />
     </>
   );
 };
