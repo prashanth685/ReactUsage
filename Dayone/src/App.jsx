@@ -15,6 +15,7 @@ import Image from "./Components/Image";
 import Drag from "./Components/Drag";
 import Tailwind from "./Components/Tailwind";
 import { MainHome } from "./Components/MainHome";
+import { Paginate } from "./Components/Paginate";
 // import Lazy from "./Components/Lazy";
 // const Lazy = React.lazy(() => import("./Components/Lazy"));
 
@@ -41,7 +42,8 @@ const App = () => {
       {/* <Image /> */}
       {/* <Drag /> */}
       {/* <Tailwind /> */}
-      <MainHome />
+      {/* <MainHome /> */}
+      <Paginate />
     </>
   );
 };
