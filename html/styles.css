@@ -1,0 +1,33 @@
+:root {
+  --main-color: #8080;
+}
+p {
+  background-color: var(--main-color);
+}
+p::before {
+  content: "Hi";
+}
+
+h1,
+h2 {
+  font-size: 1rem;
+  text-justify: auto;
+  text-emphasis: triangle;
+  line-height: 2pt;
+  filter: blur(10%);
+}
+div p {
+  color: yellow;
+}
+
+/* .container {
+  background-image: url("https://plus.unsplash.com/premium_photo-1774271492622-2caebba85850?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyfHx8ZW58MHx8fHx8");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: left top;
+  background-color: lightblue;
+  background-size: 40% 30%;
+  padding: 5rem;
+  width: 250px;
+  height: 500px;
+} */
