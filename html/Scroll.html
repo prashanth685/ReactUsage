@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        width: 370px;
+        height: 120px;
+        background-color: #f5f5;
+        overflow: auto;
+      }
+      div::-webkit-scrollbar {
+        width: 12px;
+      }
+      div::-webkit-scrollbar-track {
+        background-color: red;
+      }
+      .heading {
+        color: #dc4291;
+        text-align: center;
+      }
+      div::-webkit-scrollbar-thumb {
+        background: #e77f7f;
+        border-radius: 10px;
+        border: 3px solid yellow;
+      }
+      div::-webkit-scrollbar-thumb:hover {
+        background: #da3e3e;
+      }
+      .nav-item {
+        display: inline-block;
+        padding: 10px 20px;
+        margin: 5px;
+        background-color: rgba(11, 210, 11, 0.267);
+        color: #fff;
+        text-decoration: none;
+      }
+      .nav-item:hover {
+        background-color: #0f0;
+        cursor: pointer;
+      }
+      .dropdown {
+        display: none;
+      }
+      .main > button {
+        padding: 12px 19px;
+        outline: none;
+        border: none;
+        color: #0f0;
+        background-color: #434;
+        margin: 12px;
+        cursor: pointer;
+        text-orientation: sideways;
+      }
+      .main:hover .dropdown {
+        display: inline;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h3 class="heading">scrollbar</h3>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis
+      commodi saepe amet repudiandae illum dolores, cupiditate officia
+      necessitatibus rerum et ipsa magnam adipisci ut sunt quaerat aliquam
+      voluptates libero officiis!
+    </div>
+    <nav>
+      <a class="nav-item">Home</a>
+      <a class="nav-item">Home</a>
+      <a class="nav-item">Home</a>
+      <a class="nav-item">Home</a>
+    </nav>
+    <div class="main">
+      <button>Select an Option</button>
+      <div class="dropdown">
+        <p>option1</p>
+        <p>option1</p>
+        <p>option1</p>
+      </div>
+    </div>
+    <h2 class="second-container">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, fugiat
+      vitae sequi quod omnis magni dolorem eligendi saepe deleniti? Eaque, rerum
+      facere ut quasi non omnis velit nesciunt corporis optio?
+    </h2>
+  </body>
+</html>

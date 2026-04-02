@@ -1,0 +1,85 @@
+<!-- <!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      nav {
+        width: 100%;
+        background-color: #3434;
+      }
+      ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+        padding: 10px;
+        margin: 0;
+      }
+      li a {
+        text-decoration: none;
+        color: white;
+        padding: 10px;
+      }
+      li a:hover {
+        background-color: #333;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#Tutorial">Tutorialpoiny</a></li>
+        <li><a href="#Tutorial">Tutorialpoiny</a></li>
+        <li><a href="#Tutorial">Tutorialpoiny</a></li>
+        <li><a href="#Tutorial">Tutorialpoiny</a></li>
+      </ul>
+    </nav>
+  </body>
+</html> -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <style>
+      img {
+        width: 200px;
+        height: 200px;
+      }
+      .overlay-container {
+        position: relative;
+        width: 25%;
+      }
+      .overlay-container:hover .fade-effect {
+        opacity: 0.9;
+        height: 200px;
+      }
+      .fade-effect {
+        position: absolute;
+        transition: 0.9s ease;
+        opacity: 0;
+        width: 200px;
+        height: 200px;
+        border-radius: 5px;
+        top: 0;
+        background-color: #d346e6;
+        text-align: center;
+        color: #ffffff;
+      }
+      h2 {
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2>Hover your cursor over the image.</h2>
+
+    <div class="overlay-container">
+      <img src="/css/images/tutimg.png" />
+      <div class="fade-effect">
+        <h2>Fade Overlay Effect</h2>
+      </div>
+    </div>
+  </body>
+</html>

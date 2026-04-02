@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        counter-reset: section;
+      }
+      h2::before {
+        counter-increment: section;
+        content: "Section" counter(section) ":";
+        font-size: 2rem;
+      }
+      p {
+        writing-mode: vertical-lr;
+      }
+      div > h2 + p {
+        background-color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Counters</h1>
+    <h2>SQl</h2>
+    <h2>SQl</h2>
+    <h2>SQl</h2>
+    <h2>SQl</h2>
+    <div>
+      <h2>writting mode</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores,
+        aspernatur obcaecati minima reprehenderit, quod ratione at totam quia
+        numquam earum debitis dolorum quas dicta voluptatibus nisi dolores! Ut,
+        perspiciatis voluptates?
+      </p>
+    </div>
+  </body>
+</html>
