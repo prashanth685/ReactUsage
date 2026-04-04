@@ -1,79 +1,115 @@
-// var a = 12;
-// {
-//   let x = 12;
-//   x = 13;
-//   console.log(x);
-//   const age = 12;
-//   //   age = 13;
-//   console.log(age);
-// }
-// age = 13;
-// console.log(age);
+// // var a = 12;
+// // {
+// //   let x = 12;
+// //   x = 13;
+// //   console.log(x);
+// //   const age = 12;
+// //   //   age = 13;
+// //   console.log(age);
+// // }
+// // age = 13;
+// // console.log(age);
 
-const obj = {
-  animal: "lion",
-  color: "yellow",
-};
-// obj.animal = "elephant";
-obj.color = "red";
+const { json } = require("express");
+
+// const obj = {
+//   animal: "lion",
+//   color: "yellow",
+// };
+// // obj.animal = "elephant";
+// obj.color = "red";
+// // console.log(obj);
+
+// let product = obj.animal ?? "elephant";
+// console.log(product);
+
+// let num1 = 98e-7;
+// console.log(num1);
+
+// let name = "ajay";
+// name = undefined;
+
+// console.log(name);
+// delete obj.animal;
 // console.log(obj);
 
-let product = obj.animal ?? "elephant";
-console.log(product);
+// let num2 = 12,
+//   num3 = 12;
+// console.log(eval(num1, num2));
 
-let num1 = 98e-7;
-console.log(num1);
+// let x = 12;
+// if (12 === x) {
+//   console.log("yes");
+// }
 
-let name = "ajay";
-name = undefined;
+// let num4 = 6,
+//   num5 = 8;
+// console.log(num4 ^ num5);
+// console.log(typeof num4);
 
-console.log(name);
-delete obj.animal;
-console.log(obj);
+// function* test() {
+//   console.log("im before yield exp");
+//   yield 21;
+// }
+// const genObj = test();
+// console.log(genObj.next());
 
-let num2 = 12,
-  num3 = 12;
-console.log(eval(num1, num2));
+// for (var i = 0; i < 3; i++) {
+//   setTimeout(() => {
+//     console.log(i);
+//   }, 1);
+// }
+// for (let i = 0; i < 3; i++) {
+//   console.log(i);
+// }
+// var count = 0;
+// while (count < 5) {
+//   console.log(count);
+//   count++;
+// }
+// do {
+//   console.log(count);
+//   count++;
+// } while (count < 44);
 
-let x = 12;
-if (12 === x) {
-  console.log("yes");
+// let names = "ajay";
+// for (item in names) {
+//   console.log(names[item]);
+// }
+// for (item of names) {
+//   console.log(item);
+// }
+
+var num = 10;
+let promise = new Promise(function (res, rej) {
+  if (num == 10) {
+    res("the value of number greater than 10");
+  } else {
+    rej("the value of number is below 10");
+  }
+});
+console.log(promise);
+
+function getdata() {
+  fetch("https://jsonplaceholder.typicode.com/posts")
+    .then((res) => res.json())
+    .then((json) => console.log(json));
 }
+getdata();
 
-let num4 = 6,
-  num5 = 8;
-console.log(num4 ^ num5);
-console.log(typeof num4);
-
-function* test() {
-  console.log("im before yield exp");
-  yield 21;
+function postdata() {
+  fetch("https://jsonplaceholder.typicode.com/posts", {
+    method: "POST",
+    headers: {
+      "Content-type": "application/json",
+    },
+    body: JSON.stringify({
+      title: "new post",
+      body: "this is post req",
+      userId: 1,
+    }),
+  })
+    .then((res) => res.json())
+    .then((json) => console.log(json));
 }
-const genObj = test();
-console.log(genObj.next());
-
-for (var i = 0; i < 3; i++) {
-  setTimeout(() => {
-    console.log(i);
-  }, 1);
-}
-for (let i = 0; i < 3; i++) {
-  console.log(i);
-}
-var count = 0;
-while (count < 5) {
-  console.log(count);
-  count++;
-}
-do {
-  console.log(count);
-  count++;
-} while (count < 44);
-
-let names = "ajay";
-for (item in names) {
-  console.log(names[item]);
-}
-for (item of names) {
-  console.log(item);
-}
+postdata();
